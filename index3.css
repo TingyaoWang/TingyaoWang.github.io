@@ -19,17 +19,17 @@ body{
 /* Choose the appearance of the tags, h1, h3 and p: */
 h1, h3{
     color:rgb(0, 0, 0);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 p{
     color:rgb(0, 0, 0);
-    font-family: 'Arial', sans-serif;
-    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 .myWeek1{
     margin: auto;
-    max-width: 600px;
+    max-width: 1200px;
     background-color: rgb(244, 229, 200);
 
       
@@ -37,6 +37,7 @@ p{
     border-style: solid;
     border-radius: 10px;
     border-color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 
