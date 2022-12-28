@@ -1,0 +1,60 @@
+/* Richard Davies, Data Science for Economists */
+
+/* This is my second CSS file */
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+
+/* Book on colour = Joseph Albers - Interaction of Colour */
+
+body{
+    background-color: #C5C4C9;
+ }
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1{
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+h2{
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+p{
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+.portfolio{
+    margin: auto;
+    max-width: 1200px;
+    background-color: #C8D8E8;
+
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* Set the apperance of the class, chart */
+.chart{
+    background-color: white;
+    width:450px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+}
+    

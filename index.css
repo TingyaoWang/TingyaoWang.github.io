@@ -1,0 +1,111 @@
+/* Index css */
+
+body{
+    background:#C5C4C9;
+    max-width: 1000px;
+    margin: auto;
+} 
+
+/* Code for the navigation bar found on W3Schools */
+
+.topnav {
+  overflow: hidden;
+  background-color: #C8D8E8;
+  width: 1000px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  width: 333.3333px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #90A0C0;
+  color: white;
+}
+
+h2{
+    color: black;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 30px;
+}
+
+h1{
+    color: black;
+    font-family: 'Train One', cursive;
+    font-size: 80px;
+}  
+
+p{
+    color:rgb(17, 17, 17);
+    font-family: 'Nunito', sans-serif;
+}
+
+.container{
+    background-color: transparent;
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+}   
+
+.container1{
+    background-color: transparent;
+    text-align: center;
+    margin: 10px 0px;
+} 
+
+.smallbutton{
+    background-color: #C8D8E8;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #C5C4C9;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px 10px 20px 10px;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.smallbutton:hover{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.buttoncontainer{
+    text-align: center;
+    align-items: flex-start;
+    display: inline-block;
+    width: 1000px;
+    background-color: transparent;
+    margin: 50px 0px 20px 0px;
+} 
+
+.footer {
+   position: fixed;
+   font-size: 20px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: transparent;
+   color: white;
+   text-align: center;
+}   
