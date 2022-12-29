@@ -44,7 +44,17 @@
         <h3>IMF Lending as a % of World GDP</h3>
         <p> The second chart builds on the previous chart by dividing this nominal value of lending by global GDP. This chart reduces the danger of misrepresentation of the data that existed in the previous chart.</p>
         <div class="chart" id="Chart4"></div>
-        <p> The riskiest year is 1984 since the second chart shows that the IMF lent the most in 1984.</p>
+        <p>Comment: The riskiest year is 1984 since the second chart shows that the IMF lent the most in 1984.</p>
+
+        <h1>Week 3</h1>
+
+        <h3>The bar chart of CO2 Emission </h3>
+        <p> The bar chart shows the CO2 emissions from different sectors. However, after getting this chart, I found the values on y-axis is error. Thus, I changed it into a line chart.</p>
+        <div class="chart" id="Chart5"></div>
+
+        <h3>The line chart of CO2 Emission </h3>
+        <p> The line chart shows the value corretly and the difference between sectors and the trends of them are shown clearly. That is why I prefer the line chart to the bar chart in this case.</p>
+        <div class="chart" id="Chart6"> </div>
 
 
     </div> 
@@ -57,6 +67,8 @@
     var myChart2 = "chart2.json";
     var myChart3 = "imf_lending.json";
     var myChart4 = "imf_lending2.json";
+    var myChart5 = "co2bar.json";
+    var myChart6 = "co2line.json";
 
 
     // Embed charts:
@@ -64,6 +76,8 @@
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
 </script>
 
 </html>
