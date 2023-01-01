@@ -21,14 +21,23 @@ h1{
     color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
 }
+
 h2{
     color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
 }
+
+h3{
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
 p{
     color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
@@ -51,6 +60,7 @@ p{
 /* Set the apperance of the class, chart */
 .chart{
     background-color: white;
-    width:450px;
+    text-align: center;
+    
 }
     
