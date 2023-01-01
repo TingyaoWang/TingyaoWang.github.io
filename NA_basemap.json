@@ -1,24 +1,36 @@
-{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {
-    "text": "The Base Map of North America Area",
-    "subtitle": "Source: https://geojson-maps.ash.ms/",
-    "anchor": "start",
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
-  },
-  "width": 400,
-  "height": 300,
-  "data": {
-    "url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/NA.geo.json",
-    "format": {"property": "features"}
-  },
-  "projection": {"type": "mercator"},
-  "mark": {
-    "type": "geoshape",
-    "stroke": "darkslateblue",
-    "strokeWidth": 0.8,
-    "fill": "lightblue"
-  },
-  "encoding": {"tooltip": {"field": "properties.name", "type": "nominal"}}
-}
+
+  {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width": 575,
+    "height": 330,
+    "config": {"background": "white", "view": {"stroke": "transparent"},
+    "padding": {"top": 6}
+    },
+    "title": {
+        "text": "Map of North America Area",
+        "subtitle": "Source: https://geojson-maps.ash.ms/ ",
+        "fontSize": 15,
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 11,
+        "anchor": "middle",        "color": "black"},
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/NA.geo.json",
+      "format":{"property": "features"}},
+  
+          "projection":{
+              "type":"naturalEarth1"
+          },
+  
+          "mark":{
+              "type":"geoshape",
+              "fill":"lightblue",
+              "stroke": "darkgrey",
+              "strokeWidth": 1.2
+          },
+  
+          "encoding":{
+              "tooltip":{"field":"properties.name", "type": "nominal"}
+          }
+  }
