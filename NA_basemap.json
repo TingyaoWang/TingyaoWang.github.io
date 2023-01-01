@@ -20,7 +20,7 @@
       "format":{"property": "features"}},
   
           "projection":{
-              "type":"naturalEarth1"
+              "type":"mercator"
           },
   
           "mark":{
