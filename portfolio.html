@@ -64,7 +64,7 @@
 
         <h2>Week 5: Build a dashboard</h2>
         <h3>Dashboard </h3>
-        <p> lalalalalalalala python's link</p>
+        <p> lalalalalalalala python's link python的链接添加的应该是golab里run过的下载文件上传到github的链接</p>
         <div class="grid-container" style = "display: grid;">
             <div class="grid-item"><div class = dashchart id = "Chart8" style = "display: block;"></div></div>
             <div class="grid-item"><div class = dashchart id = "Chart9" style = "display: block;"></div></div>
@@ -91,8 +91,23 @@
         <p> Comment, in 25 words about what you find</p>
 
         <h2>Week 9: Advanced charts</h2>
-        <h3>set out an argument in 25 words</h3>
+        <h3>A scatter plot</h3>
+        <div class="chart" id="Chart19"></div>
+        <p>This chart shows that there is almost no relationship between corruption and GDP.</p>
+        <h3>A histogram of distribution</h3>
         <p> Comment, in 25 words about what you find</p>
+
+        <h2>Week 10: Advanced charts</h2>
+        <h3>Regression</h3>
+        <div class="chart" id="Chart20"></div>
+        <p> This chart shows the relationship between corruption and GDP per capita. R^2=0.63 means the correlation between them is high.</p>
+        <h3>another</h3>
+        <p> Comment, in 25 words about what you find</p>
+
+
+
+
+
 
 
     </div> 
@@ -119,6 +134,8 @@
     var myChart16= "output9.json";
     var myChart17= "NA_basemap.json";
     var myChart18= "NA_map2.json";
+    var myChart19= "Corruption_GDP_Scatter.json";
+    var myChart20= "Corruption_GDP_per.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -139,6 +156,8 @@
     vegaEmbed('#Chart16', myChart16);
     vegaEmbed('#Chart17', myChart17);
     vegaEmbed('#Chart18', myChart18);
+    vegaEmbed('#Chart19', myChart19);
+    vegaEmbed('#Chart20', myChart20);
 
 </script>
 
