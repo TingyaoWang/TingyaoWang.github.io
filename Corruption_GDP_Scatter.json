@@ -1,0 +1,90 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/Corruption_GDP.csv"
+    },
+    "title": {
+      "text": "Relationship between Corruption and GDP",
+      "subtitle": [
+        "Corruption Index =(0,100), GDP is in USD billion. ",
+        "Source: Trading Economics"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 11,
+      "fontSize": 15,
+      "color": "black"
+    },
+    "width": 400,
+    "height": 320,
+    "layer": [
+      {
+        "mark": {
+          "type": "point",
+          "color": "rgb(0,47,167)",
+          "filled": true,
+          "opacity": 0.9,
+          "size": 50,
+          "tooltip": true
+        },
+        "encoding": {
+          "x": {
+            "field": "Index",
+            "type": "quantitative",
+            "title": "Corruption Index",
+            "axis": {"titleFontSize": 11, "tickMinStep": 1}
+          },
+          "y": {
+            "field": "GDP",
+            "type": "quantitative",
+            "title": "GDP in USD Billion",
+            "axis": {"titleFontSize": 11.4}
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"},
+            {"field": "Index","type": "nominal","title": "Corruption Index "},
+            {"field": "GDP","type": "nominal","title": "GDP in USD Billion"}
+          ]
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "red"},
+        "transform": [
+          {"regression": "Index",
+            "on": "GDP"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "Index",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "GDP",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "regression": "Index",
+            "on": "GDP",
+            "params": true
+         },
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "firebrick",
+          "x": 380,
+          "align": "right",
+          "y": 20,
+          "fontSize": 15,
+          "fontWeight": "bold"
+        },
+        "encoding": {
+            "text": {"type": "nominal", "field": "R2"}
+        }
+      }
+    ]
+  }
