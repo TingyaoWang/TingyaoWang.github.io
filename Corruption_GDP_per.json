@@ -65,8 +65,8 @@
       {
         "transform": [
           {
-            "regression": "Index",
-            "on": "GDP per capita",
+            "regression": "GDP per capita",
+            "on": "Index",
             "params": true
          },
           {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
