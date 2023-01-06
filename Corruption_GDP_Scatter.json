@@ -47,12 +47,9 @@
         }
       },
       {
-        "mark": {"type": "line", "color": "red"},
-        "transform": [
-          {"regression": "Index",
-            "on": "GDP"
-          }
-        ],
+        "mark": {"type": "line", "color": "green","interpolate": "linear"},
+        "transform": [{"regression": "GDP",
+            "on": "Index"}],
         "encoding": {
           "x": {
             "field": "Index",
@@ -67,15 +64,15 @@
       {
         "transform": [
           {
-            "regression": "Index",
-            "on": "GDP",
+            "regression": "GDP",
+            "on": "Index",
             "params": true
          },
           {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
         ],
         "mark": {
           "type": "text",
-          "color": "firebrick",
+          "color": "green",
           "x": 380,
           "align": "right",
           "y": 20,
