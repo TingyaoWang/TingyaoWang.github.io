@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 410,
+  "config": {
+    "background": "white",
+    "view": {"stroke": "transparent"},
+    "padding": {"top": 7}
+  },
+  "title": {
+    "text": "GDP per capita",
+    "subtitle": "This map just includes countries with GDP per capita data. in constant international-$, 1990-2020. Source: World Bank.",
+    "fontSize": 15,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "anchor": "middle",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2020,
+      "bind": {
+        "input": "range",
+        "min": 1990,
+        "max": 2020,
+        "step": 1,
+        "name": "Select the Year:"
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/gdp-per-capita.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.Year == yearSelector"},
+    {
+      "lookup": "Country",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/world.geo.json",
+          "format": {"property": "features"}
+        },
+        "key": "properties.name",
+        "fields": ["properties", "type", "geometry"]
+      }
+    }
+  ],
+  "projection": {"type": "mercator"},
+  "mark": {"type": "geoshape", "stroke": "darkgrey", "strokeWidth": 1},
+  "encoding": {
+    "color": {
+      "field": "GDP per capita",
+      "legend": {"orient": "bottom-left", "direction": "horizontal"},
+      "type": "quantitative",
+      "scale": {"scheme": "yellowgreenblue"}
+    },
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "Country"},
+      {"field": "GDP per capita", "title": "GDP per capita"}
+    ]
+  }
+}
