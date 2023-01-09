@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Inactivity rates of UK",
+    "subtitle": [
+      "For all population aged 16-64. Data covers JAN-2000 to SEP-2022",
+      "Source: ONS"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/inactive_rate.csv",
+    "format": {"type": "csv"}
+  },
+
+  "height": 350,
+  "width": 480,
+  "autosize": {"type": "fit", "contains": "padding"},
+
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "x": {"field": "Time", "type": "temporal", "title": null},
+        "y": {
+          "field": "Inactive rate",
+          "type": "quantitative",
+          "axis": {"grid": false},
+          "scale": {"domain": [18, 30]},
+          "title": "Inactivity rate"
+        },
+        "tooltip": [
+      {"field": "Inactive rate", "type": "nominal"}
+
+    ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#000000",
+        "size": 2,
+        "strokeDash": [4, 4]
+      },
+      "encoding": {
+        }
+      }
+  ]
+}
