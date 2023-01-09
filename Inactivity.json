@@ -39,16 +39,6 @@
 
     ]
       }
-    },
-    {
-      "mark": {
-        "type": "rule",
-        "color": "#000000",
-        "size": 2,
-        "strokeDash": [4, 4]
-      },
-      "encoding": {
-        }
-      }
+    }
   ]
 }
