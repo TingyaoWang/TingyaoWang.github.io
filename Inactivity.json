@@ -1,44 +1,36 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
+  "description": "The inactivity rate in the UK",
+  "data": {"url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/inactive_rate.csv"},
   "title": {
-    "text": "Inactivity rates of UK",
+    "text": "The inactivity rate in the UK",
     "subtitle": [
-      "For all population aged 16-64. Data covers JAN-2000 to SEP-2022",
-      "Source: ONS"
+      "From 2000 to 2020",
+      "Source: ONS."
     ],
+    "fontSize": 14,
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 12,
-    "anchor": "start",
-    "color": "black"
+    "subtitleFontSize": 11,
+    "color": "black",
+    "anchor": "middle"
   },
-
-  "data": {
-    "url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/inactive_rate.csv",
-    "format": {"type": "csv"}
-  },
-
-  "height": 350,
-  "width": 480,
-  "autosize": {"type": "fit", "contains": "padding"},
-
-  "layer": [
-    {
-      "mark": {"type": "line"},
-      "encoding": {
-        "x": {"field": "Time", "type": "temporal", "title": null},
-        "y": {
-          "field": "Inactive rate",
+  "height": 300,
+  "width": 400,
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Time", "type": "temporal","title": "Year"},
+    "y": {"field": "Inactive rate", 
+    "type": "quantitative",
+    "title": "Inactivity rate %",
+    "scale": {"domain": [18, 24]} },
+  "tooltip": [
+        {"field": "Time",
+          "title": "Time",
+          "type": "temporal",
+          "timeUnit": "month"},
+        {"field": "Inactive rate",
           "type": "quantitative",
-          "axis": {"grid": false},
-          "scale": {"domain": [18, 30]},
-          "title": "Inactivity rate"
-        },
-        "tooltip": [
-      {"field": "Inactive rate", "type": "nominal"}
-
-    ]
-      }
-    }
-  ]
+          "title": "Inactivity rate"}
+      ]
+  }
 }
