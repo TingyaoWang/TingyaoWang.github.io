@@ -3,7 +3,7 @@
   "title": {
     "text": "Figure 5: The relationship between 3 variables.",
     "subtitle": [
-      "variables:the number of top-200 university, gross enrollment ratio and GDP",
+      "Variables:the number of top-200 university, gross enrollment ratio and GDP",
       "GDP is in USD billion ",
       "Source: Webometrics, Our World in Data and Trading Economics."
     ],
@@ -13,8 +13,8 @@
     "color": "black",
     "anchor": "middle"
   },
-  "height": 400,
-  "width": 600,
+  "height": 260,
+  "width": 380,
   "config": {
     "padding": {"top": 10, "bottom": 8, "left": 8, "right": 1},
     "background": "white",
