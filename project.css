@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
+
 /* Set the background color for my page: */
 body{
   background:#C5C4C9;
@@ -87,8 +88,16 @@ p{
 
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: white;
-    text-align: center;
-    
+  background-color: #fff;
+  width:800px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(100,100,100);
+  margin-bottom:20px;
+  justify-content: center;
+  align-items:center;
+  text-align:center
 }
+    
     
