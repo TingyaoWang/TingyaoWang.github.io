@@ -4,7 +4,7 @@
       "url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/Corruption_GDP_per.csv"
     },
     "title": {
-      "text": "Figure 6: Relationship between Corruption and GDP Per Capita",
+      "text": "Relationship between Corruption and GDP Per Capita",
       "subtitle": [
         "Corruption Index =(0,100), GDP is in USD. ",
         "Source: Trading Economics"
@@ -14,8 +14,8 @@
       "fontSize": 15,
       "color": "black"
     },
-    "width": 600,
-    "height": 400,
+    "width": 500,
+    "height": 350,
     "layer": [
       {
         "mark": {
@@ -65,8 +65,8 @@
       {
         "transform": [
           {
-            "regression": "GDP per capita",
-            "on": "Index",
+            "regression": "Index",
+            "on": "GDP per capita",
             "params": true
          },
           {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
