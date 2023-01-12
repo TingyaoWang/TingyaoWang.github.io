@@ -1,0 +1,94 @@
+/* Richard Davies, Data Science for Economists */
+
+/* This is my second CSS file */
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+body{
+  background:#C5C4C9;
+  max-width: 1000px;
+  margin: auto;
+} 
+
+/* Book on colour = Joseph Albers - Interaction of Colour */
+.topnav {
+    overflow: hidden;
+    background-color: #C8D8E8;
+    width: 1000px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    width: 333.3333px;
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #90A0C0;
+    color: white;
+  }
+
+body{
+    background-color: #C5C4C9;
+    text-align: center;
+ }
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1{
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2{
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+h3{
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+p{
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+.project{
+    margin: auto;
+    max-width: 1200px;
+    background-color: #C5C4C9;
+    text-align: center;
+}
+
+/* Set the apperance of the class, chart */
+.chart{
+    background-color: white;
+    text-align: center;
+    
+}
+    
