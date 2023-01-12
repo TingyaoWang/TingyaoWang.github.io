@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/data_uk_gdp-IHYQ.json",
+    "format": {"type": "json", "property": "quarters"}
+  },
+  "title": {
+    "text": "The growth rate of GDP in the UK",
+    "subtitle": "From 1995-2022, Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 400,
+  "height": 300,
+  "mark": {"type": "line", "color": "rgb(0,47,167"},
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "axis": {"grid": false},
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {"grid": false},
+      "title": "The growth rate of GDP %"
+    },
+  "tooltip": [
+        {"field": "year",
+          "title": "Time",
+          "type": "temporal",
+          "timeUnit": "year"},
+        {"field": "value",
+          "type": "quantitative",
+          "title": "GDP"}
+      ]
+  }
+}
