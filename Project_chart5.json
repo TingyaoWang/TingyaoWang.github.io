@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Figure 5: The bubble chart of the number of top-200 university, gross enrollment ratio and GDP per capita.",
+    "text": "Figure 5: The bubble chart of the number of top-200 university, gross enrollment ratio and GDP.",
     "subtitle": [
-      "GDP per capita is in USD ",
+      "GDP is in USD billion ",
       "Source: Webometrics, Our World in Data and Trading Economics."
     ],
     "fontSize": 14,
