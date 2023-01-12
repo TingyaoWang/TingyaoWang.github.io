@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/higher_rate.csv"},
   "title": {
-      "text": "Gross enrollment ratio of tertiary education",
+      "text": "Figure 3: Gross enrollment ratio of tertiary education",
       "subtitle": "Source: Our World in Data.",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
