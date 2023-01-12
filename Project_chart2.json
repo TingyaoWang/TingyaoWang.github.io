@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/University.csv"},
   "title": {
-      "text": "The number of top 200 universities in different countries",
+      "text": "Figure 2: The number of top 200 universities in different countries",
       "subtitle": "Source: Webometrics and World Bank.",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
