@@ -90,6 +90,11 @@ p{
     max-width: 1200px;
     background-color: #C8D8E8;
     text-align: center;
+    justify-content: center;
+    border-style:double;
+    border-width:6px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 20px;
 }
 
 /* Set the apperance of the class, chart */
@@ -111,9 +116,9 @@ p{
   width:260px;
   border-width: 2px;
   border-style: solid;
-  border-radius: 10px;
+  border-radius: 5px;
   border-color: rgb(100,100,100);
-  margin:auto
+  margin:auto;
 }
 
     
