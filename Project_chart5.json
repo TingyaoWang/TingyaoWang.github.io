@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Figure 5: The bubble chart of the number of top-200 university, gross enrollment ratio and GDP.",
+    "text": "Figure 5: The relationship between 3 variables.",
     "subtitle": [
+      "variables:the number of top-200 university, gross enrollment ratio and GDP",
       "GDP is in USD billion ",
       "Source: Webometrics, Our World in Data and Trading Economics."
     ],
@@ -12,8 +13,8 @@
     "color": "black",
     "anchor": "middle"
   },
-  "height": 320,
-  "width": 258,
+  "height": 400,
+  "width": 600,
   "config": {
     "padding": {"top": 10, "bottom": 8, "left": 8, "right": 1},
     "background": "white",
