@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "The average weekly earning in the UK",
+  "data": {"url": "https://raw.githubusercontent.com/TingyaoWang/TingyaoWang.github.io/main/weekly_earning.csv"},
+  "title": {
+    "text": "The average weekly earning in the UK",
+    "subtitle": [
+      "From 2000 to 2020",
+      "Source: ONS."
+    ],
+    "fontSize": 14,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "color": "black",
+    "anchor": "middle"
+  },
+  "height": 300,
+  "width": 400,
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Time", "type": "temporal","title": "Year"},
+    "y": {"field": "Weekly Earning", 
+    "type": "quantitative",
+    "title": "Weekly Earning",
+    "scale": {"domain": [200, 700]} },
+  "tooltip": [
+        {"field": "Time",
+          "title": "Time",
+          "type": "temporal",
+          "timeUnit": "month"},
+        {"field": "Weekly Earning",
+          "type": "quantitative",
+          "title": "Weekly Earning"}
+      ]
+  }
+}
